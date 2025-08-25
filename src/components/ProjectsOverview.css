@@ -32,6 +32,10 @@
 .project-links {
   display: flex;
   gap: 10px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 .project-links a {
