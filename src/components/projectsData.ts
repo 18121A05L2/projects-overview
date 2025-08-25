@@ -6,6 +6,8 @@ export const projectsData = [
     completedDate: "2025-07-20",
     gitLink: "https://github.com/18121A05L2/zk-mixer",
     liveLink: "https://myportfolio.com",
+    contractAddress:
+      "https://sepolia.etherscan.io/address/0xACf0c739b90b0BBf79F45ED77671Ca9628E61660",
   },
   {
     name: "Twitter Clone App",

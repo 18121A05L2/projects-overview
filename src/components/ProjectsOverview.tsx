@@ -16,20 +16,34 @@ const ProjectsOverview = () => {
             <p className="project-description">{project.description}</p>
             <p className="project-days">Completed {daysOld} days ago</p>
             <div className="project-links">
-              <a
-                href={project.gitLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-              <a
-                href={project.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Website
-              </a>
+              {project.gitLink && (
+                <a
+                  href={project.gitLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              )}
+              {project.liveLink && (
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Website
+                </a>
+              )}
+
+              {project.contractAddress && (
+                <a
+                  href={project.contractAddress}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  contract Address
+                </a>
+              )}
             </div>
           </div>
         );
