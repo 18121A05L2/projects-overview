@@ -2,5 +2,6 @@ import "./App.css";
 import ProjectsOverview from "./components/ProjectsOverview";
 
 export default function App() {
-  return <ProjectsOverview />;
+  const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  return <ProjectsOverview isDark={isDark} />;
 }

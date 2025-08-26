@@ -1,7 +1,9 @@
 import "./ProjectsOverview.css";
+import classNames from "classnames";
+
 import { projectsData } from "./projectsData";
 
-const ProjectsOverview = () => {
+const ProjectsOverview = ({ isDark }: { isDark: boolean }) => {
   return (
     <div className="projects-container">
       {projectsData.map((project, index) => {
@@ -11,7 +13,12 @@ const ProjectsOverview = () => {
         );
 
         return (
-          <div key={index} className="project-card">
+          <div
+            key={index}
+            className={classNames("project-card", {
+              "project-card-dark": isDark,
+            })}
+          >
             <h2 className="project-name">{project.name}</h2>
             <p className="project-description">{project.description}</p>
             <p className="project-days">Completed {daysOld} days ago</p>
