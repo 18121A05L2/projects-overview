@@ -7,6 +7,7 @@ export const projectsData = [
     gitLink: "https://github.com/18121A05L2/zk-mixer",
     contractAddress:
       "https://sepolia.etherscan.io/address/0xACf0c739b90b0BBf79F45ED77671Ca9628E61660",
+    liveLink: "https://zk-mixer.vercel.app/",
   },
   {
     name: "DAMN Vulnerable DeFi ",
